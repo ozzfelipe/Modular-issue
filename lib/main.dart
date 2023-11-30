@@ -100,7 +100,9 @@ class _FirstChildPageState extends State<FirstChildPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.tealAccent,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: const Text('First module page'),
       ),
       body: Center(
@@ -134,8 +136,10 @@ class _SecondChildPageState extends State<SecondChildPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.amberAccent,
       appBar: AppBar(
         title: const Text('Second module page'),
+        automaticallyImplyLeading: false,
       ),
       body: Center(
         child: TextButton(
